@@ -9,6 +9,7 @@
   "license": "MIT",
   "author": {
     "name": "Dmitry Shvetsov",
+    "email": "hey@dmitryshvetsov.com",
     "url": "https://dmitryshvetsov.com"
   },
   "scripts": {
