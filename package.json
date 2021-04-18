@@ -1,7 +1,7 @@
 {
   "name": "attila-dmitryshvetsov",
   "description": "Customized Attila Ghost Theme",
-  "version": "3.1.0",
+  "version": "0.1.0",
   "engines": {
     "ghost": ">=4.0.0",
     "ghost-api": "v4"
