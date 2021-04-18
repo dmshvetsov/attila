@@ -15,7 +15,7 @@ $inner: calc(64rem + 8vw);
    ========================================================================== */
 :root {
   --font-primary: 'Fira Sans', sans-serif;
-  --font-secondary: 'Libre Baskerville', serif;
+  --font-secondary: 'Merriweather', serif;
 }
 
 html {
@@ -75,6 +75,7 @@ textarea {
     margin: 0 0 4rem;
     text-rendering: optimizeLegibility;
     color: var(--color-content-lead);
+    font-weight: 600;
   }
 
   h1 {
@@ -184,7 +185,7 @@ textarea {
     box-sizing: border-box;
     border-left: 0.25em solid var(--ghost-accent-color);
     font-style: italic;
-    font-weight: 400;
+    font-weight: 300;
   }
 
   blockquote * {
@@ -201,7 +202,15 @@ textarea {
     margin-bottom: 0;
   }
 
-  em,
+  em {
+    font-family: var(--font-secondary);
+    margin: 0 0 4rem;
+    padding: 0.25em 1em;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+
   i {
     font-style: italic;
   }
@@ -2018,6 +2027,7 @@ textarea {
 .post-header .post-title {
   margin: 0 0 4rem;
   font-size: 6em;
+  font-weight: 700;
   line-height: 1.25em;
 }
 
