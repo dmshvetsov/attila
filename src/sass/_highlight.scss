@@ -5,12 +5,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 */
 
 .hljs {
-	display: block;
-	color: #66645c;
-	-webkit-text-size-adjust: none;
-	@media (prefers-color-scheme: dark) {
-		color: #C7C6BC;
-	}
+  display: block;
+  color: #66645c;
+  -webkit-text-size-adjust: none;
+  @media (prefers-color-scheme: dark) {
+    color: #C7C6BC;
+  }
 }
 
 .hljs-comment,
@@ -18,9 +18,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-javadoc {
   color: #998;
   font-style: italic;
-	@media (prefers-color-scheme: dark) {
-		color: #65655F;
-	}
+  @media (prefers-color-scheme: dark) {
+    color: #65655F;
+  }
 }
 
 .hljs-keyword,
@@ -32,18 +32,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-status {
   color: #333;
   font-weight: bold;
-	@media (prefers-color-scheme: dark) {
-		color: #BBB;
-	}
+  @media (prefers-color-scheme: dark) {
+    color: #BBB;
+  }
 }
 
 .hljs-number,
 .hljs-hexcolor,
 .ruby .hljs-constant {
   color: #008080;
-	@media (prefers-color-scheme: dark) {
-		color: #25B7B7;
-	}
+  @media (prefers-color-scheme: dark) {
+    color: #25B7B7;
+  }
 }
 
 .hljs-string,
@@ -52,9 +52,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-dartdoc,
 .tex .hljs-formula {
   color: #D14;
-	@media (prefers-color-scheme: dark) {
-		color: #EC2F5E;
-	}
+  @media (prefers-color-scheme: dark) {
+    color: #EC2F5E;
+  }
 }
 
 .hljs-title,
@@ -62,9 +62,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .scss .hljs-preprocessor {
   color: #900;
   font-weight: bold;
-	@media (prefers-color-scheme: dark) {
-		color: #E42A2A;
-	}
+  @media (prefers-color-scheme: dark) {
+    color: #E42A2A;
+  }
 }
 
 .hljs-list .hljs-keyword,
@@ -78,9 +78,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .tex .hljs-command {
   color: #458;
   font-weight: bold;
-	@media (prefers-color-scheme: dark) {
-		color: #647ECC;
-	}
+  @media (prefers-color-scheme: dark) {
+    color: #647ECC;
+  }
 }
 
 .hljs-tag,
@@ -89,9 +89,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .django .hljs-tag .hljs-keyword {
   color: #000080;
   font-weight: normal;
-	@media (prefers-color-scheme: dark) {
-		color: #536CF3;
-	}
+  @media (prefers-color-scheme: dark) {
+    color: #536CF3;
+  }
 }
 
 .hljs-attribute,
@@ -99,16 +99,16 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .lisp .hljs-body,
 .hljs-name {
   color: #008080;
-	@media (prefers-color-scheme: dark) {
-		color: #25B7B7;
-	}
+  @media (prefers-color-scheme: dark) {
+    color: #25B7B7;
+  }
 }
 
 .hljs-regexp {
   color: #009926;
-	@media (prefers-color-scheme: dark) {
-		color: #61D27C;
-	}
+  @media (prefers-color-scheme: dark) {
+    color: #61D27C;
+  }
 }
 
 .hljs-symbol,
@@ -123,9 +123,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 .hljs-built_in {
   color: #0086B3;
-	@media (prefers-color-scheme: dark) {
-		color: #3CB1D8;
-	}
+  @media (prefers-color-scheme: dark) {
+    color: #3CB1D8;
+  }
 }
 
 .hljs-preprocessor,
@@ -136,9 +136,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-cdata {
   color: #999;
   font-weight: bold;
-	@media (prefers-color-scheme: dark) {
-		color: #666;
-	}
+  @media (prefers-color-scheme: dark) {
+    color: #666;
+  }
 }
 
 .hljs-deletion {
