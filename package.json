@@ -1,21 +1,18 @@
 {
-  "name": "attila",
-  "description": "Ghost Theme",
-  "demo": "https://attila.peteramende.de",
+  "name": "attila-dmitryshvetsov",
+  "description": "Customized Attila Ghost Theme",
   "version": "3.1.0",
   "engines": {
     "ghost": ">=4.0.0",
     "ghost-api": "v4"
   },
   "license": "MIT",
-  "screenshots": {
-    "desktop": "src/screenshot-desktop.jpg",
-    "mobile": "src/screenshot-mobile.jpg"
-  },
   "author": {
-    "name": "Peter Amende",
-    "email": "hey@peteramende.de",
-    "url": "https://peteramende.de"
+    "name": "Dmitry Shvetsov",
+    "url": "https://dmitryshvetsov.com"
+  },
+  "scripts": {
+    "develop": "grunt"
   },
   "gpm": {
     "type": "theme",
@@ -31,7 +28,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zutrinken/attila.git"
+    "url": "https://github.com/dmshavetsov/attila.git"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
