@@ -2486,6 +2486,36 @@ textarea {
 }
 
 /* ==========================================================================
+   Translations
+   ========================================================================== */
+
+.post-translations {
+  font-size: 2em;
+  font-family: var(--font-secondary);
+
+  .post-translations-container {
+    margin: 0 0 2em 0;
+    padding: 0;
+  }
+  .post-translations-item {
+    margin-left: 1rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: inset 0 -2px 0 var(--ghost-accent-color);
+    transition: all ease-out 0.1s;
+
+    &:focus,
+    &:hover {
+      box-shadow: inset 0 -3px 0 var(--ghost-accent-color);
+    }
+  }
+}
+
+/* ==========================================================================
    Pagination
    ========================================================================== */
 .pagination {

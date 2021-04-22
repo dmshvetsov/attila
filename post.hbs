@@ -54,6 +54,7 @@
   <main class="content" role="main">
     <article class="{{post_class}}">
       <div class="inner">
+        <div class="post-translations" data-language-select=""></div>
 
         <section class="post-content">
           {{content}}
@@ -203,5 +204,29 @@
         });
       }
     });
+    // display translation to other language
+    const langSelect = document.querySelector("[data-language-select]");
+    const availableTranslations = [...document.querySelectorAll("head [hreflang]")];
+    if (langSelect && availableTranslations.length) {
+      const hreflangToTitleMap = (code) => {
+        const map = {
+          en: 'English',
+          ru: 'Russian'
+        };
+        return map[code] || console.error(`lang code title not found for code [${code}]`);
+      };
+      const links = availableTranslations
+        .map(link => {
+          return `
+            <span class="post-translations-item">
+              <a href="${link.href}" hreflang="${link.hreflang}">${hreflangToTitleMap(link.hreflang)}</a>
+            </span>
+          `;
+        })
+        .join("");
+
+      // langSelect.innerHTML = `Translated by readers into: <ul class="post-translations-container">${links}</ul>`;
+      langSelect.innerHTML = `<div class="post-translations-container">Translated by readers into: ${links}</div>`;
+    }
   </script>
 {{/contentFor}}
