@@ -1,0 +1,16 @@
+routes:
+
+collections:
+  /:
+    permalink: /{slug}/
+    template: index
+    filter: 'tag:-hash-ru'
+  /ru/:
+    permalink: /ru/{slug}/
+    template: index-ru
+    filter: 'tag:hash-ru'
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
+

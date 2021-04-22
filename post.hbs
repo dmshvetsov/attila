@@ -3,6 +3,12 @@
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
 
+{{#has tag="#ru"}}
+  {{#contentFor "lang"}}ru{{/contentFor}}
+{{else}}
+  {{#contentFor "lang"}}{{@site.locale}}{{/contentFor}}
+{{/has}}
+
   <div class="progress-container">
     <span class="progress-bar"></span>
   </div>

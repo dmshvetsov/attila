@@ -2,6 +2,12 @@
 
 {{#author}}
 
+{{#has tag="#ru"}}
+  {{#contentFor "lang"}}ru{{/contentFor}}
+{{else}}
+  {{#contentFor "lang"}}{{@site.locale}}{{/contentFor}}
+{{/has}}
+
 <header class="blog-header{{#if cover_image}} has-cover{{/if}}">
   <div class="inner">
     <div class="archive archive-author box archive-box">
