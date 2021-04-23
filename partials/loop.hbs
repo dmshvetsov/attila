@@ -8,14 +8,12 @@
   <div class="inner">
     <div class="box post-box">
       <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-      <span class="post-meta">
-        {{t "By"}}
-        {{authors separator=", "}}
+      <p class="post-excerpt">{{excerpt characters="500"}}</p>
+      <div class="post-meta">
+        <time datetime="{{date format='DD-MM-YYYY'}}">{{date format="MMM DD, YYYY"}}</time>
+        <span class="post-meta-delimeter">·</span>
         {{#primary_tag}}{{t "in"}} <a class="post-meta-tag" href="{{url}}">{{name}}</a>{{/primary_tag}}
-        {{t "on"}}
-        <time datetime="{{date format='DD-MM-YYYY'}}">{{date format="DD MMM YYYY"}}</time>
-      </span>
-      <p class="post-excerpt">{{excerpt}}&hellip;</p>
+      </div>
     </div>
   </div>
 </article>

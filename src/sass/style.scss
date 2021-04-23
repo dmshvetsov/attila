@@ -1997,7 +1997,7 @@ textarea {
 .post-title {
   position: relative;
   z-index: 10;
-  margin: 0 0 2rem;
+  margin: 0 0 0.25rem 0;
   font-size: 4em;
   line-height: 1.25em;
   font-weight: 700;
@@ -2028,10 +2028,16 @@ textarea {
 }
 
 .post-meta {
+  font-family: var(--font-primary);
   font-weight: 400;
-  font-size: 1.6em;
+  font-size: 1.75em;
   line-height: 2rem;
   color: var(--color-content-secondary);
+  margin-top: 1.75rem;
+
+  &-delimeter {
+    padding: 0 0.5rem;
+  }
 
   a {
     display: inline-block;
@@ -2120,7 +2126,7 @@ textarea {
 }
 
 .post-excerpt {
-  margin: 1em 0 0;
+  margin: 0;
   font-family: var(--font-secondary);
   font-size: 1.75em;
   line-height: 2em;
