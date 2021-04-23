@@ -2000,7 +2000,7 @@ textarea {
   margin: 0 0 0.25rem 0;
   font-size: 4em;
   line-height: 1.25em;
-  font-weight: 700;
+  font-weight: 600;
   text-indent: -1px;
   color: var(--color-content-lead);
 
@@ -2017,13 +2017,25 @@ textarea {
 }
 
 .post-header .post-title {
-  margin: 0 0 4rem;
+  margin: 0 0 2rem;
   font-size: 6em;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.25em;
 }
 
-.has-cover .post-title {
+.post-header .post-subtitle {
+  position: relative;
+  z-index: 10;
+  margin: 0 0 0.25rem 0;
+  font-size: 3em;
+  line-height: 1.25em;
+  font-weight: 400;
+  text-indent: -1px;
+  color: var(--color-content-secondary);
+}
+
+.has-cover .post-title,
+.has-cover .post-subtitle {
   color: white;
 }
 
