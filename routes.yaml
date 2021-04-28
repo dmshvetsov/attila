@@ -1,7 +1,10 @@
 routes:
+  /:
+    data: page.home
+    template: home
 
 collections:
-  /:
+  /articles/:
     permalink: /{slug}/
     template: index
     filter: 'tag:-hash-ru'
@@ -13,4 +16,3 @@ collections:
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/
-
