@@ -4,12 +4,12 @@
   --color-background-contrast: #E1E3E6;
   --color-background-overlay: rgba(37,40,43,0.9);
   --color-content-lead: #000;
-  --color-content-main: #222426;
+  --color-content-main: #292929;
   --color-content-secondary: #73777D;
 }
 
 .theme-dark:root {
-  --color-background-main: #222426;
+  --color-background-main: #292929;
   --color-background-secondary: #1D1F20;
   --color-background-contrast: #3B3D40;
   --color-background-overlay: rgba(9,10,13,0.9);
@@ -20,7 +20,7 @@
 
 @media (prefers-color-scheme: dark) {
   html:not(.theme-light):root {
-    --color-background-main: #222426;
+    --color-background-main: #292929;
     --color-background-secondary: #1D1F20;
     --color-background-contrast: #3B3D40;
     --color-background-overlay: rgba(9,10,13,0.9);

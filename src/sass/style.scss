@@ -49,8 +49,8 @@ textarea {
 }
 
 .post-content {
-  font-size: 1.75em;
-  line-height: 2em;
+  font-size: 2em;
+  line-height: 1.5em;
 
   a {
     color: inherit;
@@ -171,21 +171,30 @@ textarea {
   }
 
   hr {
-    display: block;
-    height: 1px;
-    margin: 0 0 4rem;
-    padding: 0;
-    background: var(--color-background-contrast);
-    border: 0;
+    border: none;
+    overflow: visible;
+    text-align: center;
+    height: 2em;
+    margin: 0 0 2em 0;
+
+    &:after {
+      background: transparent;
+      content: '...';
+      letter-spacing: 1em;
+      padding: 0 4px;
+      position: relative;
+      font-weight: 600;
+      // top: -1em;
+    } 
   }
 
   blockquote {
     font-family: var(--font-secondary);
-    margin: 0 0 4rem;
-    padding: 0.25em 1em;
+    margin: 0 0 4rem -2em;
+    padding: 0em 0em 0em 0.75em;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border-left: 0.25em solid var(--ghost-accent-color);
+    border-left: 0.2em solid var(--ghost-accent-color);
     font-style: italic;
     font-weight: 300;
   }
@@ -812,8 +821,8 @@ textarea {
 
   &.has-cover {
     padding-top: calc(24rem + 8vw);
-    color: white;
-    background: black;
+    // color: white;
+    background: var(--color-background-main);
     overflow: hidden;
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 
@@ -1370,7 +1379,7 @@ textarea {
 }
 
 .cover-active .nav-header .nav-wrapper-control {
-  color: white;
+  color: #000;
 }
 
 .menu-active .nav-header .nav-wrapper-control {
@@ -1615,28 +1624,33 @@ textarea {
 }
 
 .cover-active {
-
   .nav-wrapper-control a {
-    color: rgba(255,255,255,0.8);
+    // color: rgba(255,255,255,0.8);
+    color: #000;
 
     &:focus,
     &:hover {
-      color: white;
+      // color: white;
+      color: gold;
     }
+  }
+
+  .nav-header {
+    background-color: rgba(255,255,255,0.3);
   }
 
   .nav-header li {
     a {
       @media only screen and (min-width: $breakpoint-medium) {
-        color: rgba(255,255,255,0.8);
-        border-color: rgba(255,255,255,0.8);
+        color: rgba(0,0,0,0.8);
+        border-color: rgba(0,0,0,0.8);
       }
 
       &:focus,
       &:hover {
         @media only screen and (min-width: $breakpoint-medium) {
-          color: white;
-          border-color: white;
+          color: black;
+          border-color: black;
         }
       }
     }
@@ -1946,14 +1960,16 @@ textarea {
 
     &__secondary {
       width: 35%;
-      // flex: 4;
       align-self: center;
       text-align: center;
     }
 
     &__primary {
       width: 60%;
-      // flex: 7;
+    }
+
+    &__full-width {
+      width: 100%;
     }
   }
 }
@@ -2028,32 +2044,25 @@ textarea {
 
   .post-count {
     position: relative;
-    margin-left: 3.5rem;
+    margin-left: 1rem;
     color: var(--color-content-secondary);
-
-    &:after {
-      content: '';
-      position: absolute;
-      left: -2.5rem;
-      top: 50%;
-      width: 1.5rem;
-      height: 2px;
-      background: var(--color-background-contrast);
-    }
+    text-transform: capitalize;
   }
 }
 
 .has-cover .post-info {
+  background-color: var(--color-background-main);
+  padding: 0.5rem 1rem;
+
   .post-count {
-    color: white;
 
     &:after {
-      background: white;
+      // empty
     }
   }
 
   .post-type {
-    color: white;
+    // empty
   }
 }
 
@@ -2099,7 +2108,8 @@ textarea {
 
 .has-cover .post-title,
 .has-cover .post-subtitle {
-  color: white;
+  background-color: var(--color-background-main);
+  padding: 0 1rem;
 }
 
 .post-meta {
@@ -2184,19 +2194,21 @@ textarea {
 }
 
 .has-cover .post-meta {
-  color: rgba(255,255,255,0.8);
+  // color: rgba(255,255,255,0.8);
   padding: 0;
+  background-color: var(--color-background-main);
+  padding: 0.5rem 1rem;
 
   &:before {
     display: none;
   }
 
   .post-meta-avatar {
-    border-color: white;
+    // empty
   }
 
   .post-meta-author {
-    color: white;
+    // empty
   }
 }
 
