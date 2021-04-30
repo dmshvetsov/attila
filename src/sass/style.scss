@@ -1401,8 +1401,11 @@ textarea {
 
 .nav-header .nav-wrapper {
   display: flex;
+  justify-content: space-between;
   max-height: calc(100vh - 6rem);
-  padding: 2rem 4rem;
+  max-width: calc(64rem + 8vw);
+  margin: 0 auto;
+  padding: 2rem 8rem;
   overflow-y: auto;
   @media only screen and (max-width: $breakpoint-medium) {
     background: #222426;
@@ -1415,7 +1418,7 @@ textarea {
 }
 
 .nav-header .logo {
-  margin-right: 3rem;
+  margin-right: 2rem;
   @media only screen and (max-width: $breakpoint-medium) {
     display: none;
   }
@@ -1428,7 +1431,8 @@ textarea {
     img {
       display: block;
       width: auto;
-      height: 4rem;
+      height: 2.25rem;
+      padding: 0.7rem 0 1.05rem 0;
     }
   }
 }
@@ -1436,8 +1440,7 @@ textarea {
 .nav-header ul {
   position: relative;
   display: flex;
-  width: 100%;
-  margin: 0 auto;
+  margin: 0 2em;
   padding: 0;
   list-style: none;
   @media only screen and (max-width: $breakpoint-medium) {
@@ -1447,8 +1450,7 @@ textarea {
   }
 
   &.nav-meta {
-    width: auto;
-    justify-content: flex-end;
+    margin-right: 0;
 
     @media only screen and (max-width: $breakpoint-medium) {
       width: 100%;
@@ -1460,7 +1462,7 @@ textarea {
 
 .nav-header li {
   position: relative;
-  margin-right: 3rem;
+  margin-right: 4rem;
 
   &.active {
     a:before {
@@ -1625,13 +1627,11 @@ textarea {
 
 .cover-active {
   .nav-wrapper-control a {
-    // color: rgba(255,255,255,0.8);
     color: #000;
 
     &:focus,
     &:hover {
-      // color: white;
-      color: gold;
+      color: #000;
     }
   }
 
@@ -2593,6 +2593,30 @@ textarea {
   .post-translations-item {
     margin-left: 1rem;
   }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: inset 0 -2px 0 var(--ghost-accent-color);
+    transition: all ease-out 0.1s;
+
+    &:focus,
+    &:hover {
+      box-shadow: inset 0 -3px 0 var(--ghost-accent-color);
+    }
+  }
+}
+
+/* ==========================================================================
+   Discuss on
+   ========================================================================== */
+
+.post-discuss-on {
+  font-size: 2em;
+  font-family: var(--font-secondary);
+  margin-bottom: 2em;
+  margin-top: 2em;
 
   a {
     color: inherit;

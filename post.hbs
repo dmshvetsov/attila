@@ -49,6 +49,8 @@
           {{content}}
         </section>
 
+        {{> 'discuss_on'}}
+
         <section class="post-footer">
 
           <div class="post-share">
@@ -73,9 +75,7 @@
               {{tags separator=" "}}
             </aside>
           {{/if}}
-
         </section>
-
 
         <section class="post-comments">
           <a id="show-disqus" class="post-comments-activate">{{t "Show Comments"}}</a>
@@ -214,7 +214,6 @@
         })
         .join("");
 
-      // langSelect.innerHTML = `Translated by readers into: <ul class="post-translations-container">${links}</ul>`;
       langSelect.innerHTML = `<div class="post-translations-container">Translated by readers into: ${links}</div>`;
     }
   </script>
